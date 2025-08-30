@@ -28,14 +28,305 @@
         </style>
     </head>
     <body>
-        About Careers Events Products Support Immersive experiences that deliver
-        The leader in interactive VR Founded in 2011, Loopstudios has been
-        producing world-class virtual reality projects for some of the best
-        companies around the globe. Our award-winning creations have transformed
-        businesses through digital experiences that bind to their brand. Our
-        creations See all Deep earth Night arcade Soccer team VR The grid From
-        up above VR Pocket borealis The curiosity Make it fisheye About Careers
-        Events Products Support © 2021 Loopstudios. All rights reserved.
+        <header class="header wrapper">
+            <!-- logo -->
+            <div class="header__logo">
+                <a
+                    href="/"
+                    class="header__logo-link"
+                    title="Loop Studios"
+                    aria-label="Loop Studios"
+                >
+                    <img
+                        src="/assets/images/logo.svg"
+                        alt="Loop Studios"
+                        class="header__logo-img"
+                    />
+                </a>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="header__nav nav" aria-label="Site">
+                <button
+                    type="button"
+                    class="nav__button hide-on-desktop nav__button--open"
+                    id="nav-button-open"
+                    aria-labelledby="nav-label"
+                    aria-expanded="false"
+                >
+                    <span id="nav-label" hidden>Navigation</span>
+                    <svg
+                        class="nav__button-open-icon nav__button-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                        fill="currentColor"
+                    >
+                        <g fill="currentColor" fill-rule="evenodd">
+                            <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+                            <path d="M0 0h40v3H0z" />
+                        </g>
+                    </svg>
+                </button>
+
+                <div class="nav__overlay" aria-hidden="true"></div>
+
+                <div
+                    class="nav__drawer"
+                    role="dialog"
+                    aria-labelledby="nav-label"
+                >
+                    <button
+                        type="button"
+                        class="nav__button hide-on-desktop nav__button--close"
+                        id="nav-button-close"
+                        aria-labelledby="nav-label"
+                        aria-expanded="false"
+                        aria-label="Close"
+                    >
+                        <svg
+                            class="nav__button-close-icon nav__button-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                            viewBox="0 0 32 31"
+                        >
+                            <g fill="currentColor" fill-rule="evenodd">
+                                <path
+                                    d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"
+                                />
+                                <path
+                                    d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"
+                                />
+                            </g>
+                        </svg>
+                    </button>
+
+                    <ul class="header__nav-links flex-center-col">
+                        <li>
+                            <a href="/" class="header__nav-link btn">About</a>
+                        </li>
+
+                        <li>
+                            <a href="/" class="header__nav-link btn">Careers</a>
+                        </li>
+
+                        <li>
+                            <a href="/" class="header__nav-link btn">Events</a>
+                        </li>
+
+                        <li>
+                            <a href="/" class="header__nav-link btn"
+                                >Products</a
+                            >
+                        </li>
+
+                        <li>
+                            <a href="/" class="header__nav-link btn">Support</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main wrapper">
+            <!-- || section hero -->
+            <section class="hero">
+                <div class="hero__visual">
+                    <img
+                        src="/assets/images/mobile/image-hero.jpg"
+                        alt="Girl playing in arcade"
+                        class="hero__visual-img"
+                    />
+                </div>
+
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Immersive experiences that deliver
+                    </h1>
+                </div>
+            </section>
+
+            <!-- || section about -->
+            <section class="about">
+                <div class="about__visual">
+                    <img
+                        src="/assets/images/mobile/image-interactive.jpg"
+                        alt="A man playing on VR"
+                        class="about__visual-img"
+                    />
+                </div>
+
+                <div class="about__content">
+                    <h2 class="about__title">The leader in interactive VR</h2>
+
+                    <p class="about__description">
+                        Founded in 2011, Loopstudios has been producing
+                        world-class virtual reality projects for some of the
+                        best companies around the globe. Our award-winning
+                        creations have transformed businesses through digital
+                        experiences that bind to their brand.
+                    </p>
+                </div>
+            </section>
+
+            <!-- || section creations -->
+            <section class="creations">
+                <h2 class="creations__title">Our creations</h2>
+
+                <div class="creations__visual-container">
+                    <div
+                        class="creations__visual-item creations__visual-item--earth"
+                    >
+                        <span class="creations__visual-item-title">
+                            Deep earth
+                        </span>
+                    </div>
+
+                    <div
+                        class="creations__visual-item creations__visual-item--arcade"
+                    >
+                        <span class="creations__visual-item-title">
+                            Night arcade
+                        </span>
+                    </div>
+
+                    <div
+                        class="creations__visual-item creations__visual-item--soccer"
+                    >
+                        <span class="creations__visual-item-title">
+                            Soccer team VR
+                        </span>
+                    </div>
+
+                    <div
+                        class="creations__visual-item creations__visual-item--grid"
+                    >
+                        <span class="creations__visual-item-title">
+                            The grid
+                        </span>
+                    </div>
+
+                    <div
+                        class="creations__visual-item creations__visual-item--aboveVR"
+                    >
+                        <span class="creations__visual-item-title">
+                            From up above VR
+                        </span>
+                    </div>
+
+                    <div
+                        class="creations__visual-item creations__visual-item--borealis"
+                    >
+                        <span class="creations__visual-item-title">
+                            Pocket borealis
+                        </span>
+                    </div>
+
+                    <div
+                        class="creations__visual-item creations__visual-item--curiosity"
+                    >
+                        <span class="creations__visual-item-title">
+                            The curiosity
+                        </span>
+                    </div>
+
+                    <div
+                        class="creations__visual-item creations__visual-item--fisheye"
+                    >
+                        <span class="creations__visual-item-title">
+                            Make it fisheye
+                        </span>
+                    </div>
+                </div>
+
+                <button
+                    type="button"
+                    class="creations__outline-btn"
+                    title="See all"
+                >
+                    See all
+                </button>
+            </section>
+        </main>
+
+        <footer class="footer warpper">
+            <!-- logo -->
+            <div class="footer__logo">
+                <a
+                    href="/"
+                    class="footer__logo-link"
+                    title="Loop Studios"
+                    aria-label="Loop Studios"
+                >
+                    <img
+                        src="/assets/images/logo.svg"
+                        alt="Loop Studios"
+                        class="footer__logo-img"
+                    />
+                </a>
+            </div>
+
+            <!-- page links -->
+            <div class="footer__links-container">
+                <div class="footer__link">
+                    <span>About</span>
+                </div>
+
+                <div class="footer__link">
+                    <span>Careers</span>
+                </div>
+
+                <div class="footer__link">
+                    <span>Events</span>
+                </div>
+
+                <div class="footer__link">
+                    <span>Products</span>
+                </div>
+
+                <div class="footer__link">
+                    <span>Support</span>
+                </div>
+            </div>
+
+            <!-- social links -->
+            <div class="footer__social-links-container">
+                <div class="footer__social-link">
+                    <img
+                        src="/assets/images/icon-facebook.svg"
+                        alt="Facebook"
+                        class="footer__social-link-icon"
+                    />
+                </div>
+
+                <div class="footer__social-link">
+                    <img
+                        src="/assets/images/icon-twitter.svg"
+                        alt="Twitter"
+                        class="footer__social-link-icon"
+                    />
+                </div>
+
+                <div class="footer__social-link">
+                    <img
+                        src="/assets/images/icon-pinterest.svg"
+                        alt="Pinterest"
+                        class="footer__social-link-icon"
+                    />
+                </div>
+
+                <div class="footer__social-link">
+                    <img
+                        src="/assets/images/icon-instagram.svg"
+                        alt="Instagram"
+                        class="footer__social-link-icon"
+                    />
+                </div>
+            </div>
+
+            <p class="footer__copyright-notice">
+                © 2021 Loopstudios. All rights reserved.
+            </p>
+        </footer>
 
         <div class="attribution">
             Challenge by
@@ -44,7 +335,10 @@
                 target="_blank"
                 rel="noopener"
                 >Frontend Mentor</a
-            >. Coded by <a href="#">Your Name Here</a>.
+            >. Coded by
+            <a href="https://www.frontendmentor.io/profile/adeysh"
+                >Adesh Katiya </a
+            >.
         </div>
     </body>
 </html>
