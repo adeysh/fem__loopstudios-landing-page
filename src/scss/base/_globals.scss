@@ -1,0 +1,29 @@
+@use "../abstracts" as a;
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    background-color: var(--color-white);
+    height: auto;
+}
+
+p {
+    margin: 0;
+}
+
+// hide elements visually
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}

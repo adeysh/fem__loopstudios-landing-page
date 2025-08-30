@@ -1,0 +1,26 @@
+@use "./functions" as *;
+
+// Alata + Josefin Sans font
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+    /* colors */
+
+    // primary
+    --color-white: hsl(0, 0%, 100%);
+    --color-black: hsl(0, 0%, 0%);
+    --color-grey-200: hsl(0, 0%, 85%);
+
+    // font
+
+    // font family
+    --ff-primary: "Alata", sans-serif;
+    --ff-secondary: "Josefin Sans", sans-serif;
+
+    // font size
+    --fs-body: clamp(0.7813rem, 0.7102rem + 0.2841vw, 0.9375rem);
+
+    // font weight
+    --fw-light: 300;
+    --fw-regular: 400;
+}
