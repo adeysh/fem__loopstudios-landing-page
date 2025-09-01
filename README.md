@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [Loopstudios Landing Page](https://www.frontendmentor.io/solutions/responsive-loopstudios-landing-page-built-with-htmlscss-and-css-grid-TMqXQilLNs)
+-   Live Site URL: [Loopstudios Landing Page](https://fem-loopstudios-landing-page-topaz.vercel.app/)
 
 ## My process
 
