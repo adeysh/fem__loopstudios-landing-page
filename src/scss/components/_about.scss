@@ -1,0 +1,39 @@
+@use "../abstracts" as a;
+
+.about {
+    @include a.flexbox($direction: column, $gap: a.rem(40));
+
+    &__visual {
+        &-img {
+        }
+    }
+
+    &__content {
+        @include a.flexbox($direction: column, $gap: a.rem(20));
+        text-align: justify;
+        padding-inline: 2rem;
+        background-color: var(--color-white);
+
+        @include a.bp($from: "desktop") {
+            position: absolute;
+            bottom: -16%;
+            right: 3%;
+            z-index: 1;
+            max-inline-size: 600px;
+            padding: 5rem;
+            text-align: left;
+        }
+    }
+
+    &__title {
+    }
+
+    &__description {
+        color: var(--color-grey-200);
+    }
+
+    @include a.bp($from: "desktop") {
+        position: relative;
+        width: 100%;
+    }
+}

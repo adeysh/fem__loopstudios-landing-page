@@ -9,7 +9,7 @@
     // primary
     --color-white: hsl(0, 0%, 100%);
     --color-black: hsl(0, 0%, 0%);
-    --color-grey-200: hsl(0, 0%, 85%);
+    --color-grey-200: hsl(0, 0%, 55%);
 
     // font
 
@@ -18,7 +18,11 @@
     --ff-secondary: "Josefin Sans", sans-serif;
 
     // font size
-    --fs-body: clamp(0.7813rem, 0.7102rem + 0.2841vw, 0.9375rem);
+    --fs-body: clamp(0.9rem, 0.7102rem + 0.2841vw, 0.9375rem);
+    --fs-h1: clamp(2.5rem, 1.9285714285714286rem + 2.857142857142857vw, 4.5rem);
+    --fs-h2: clamp(1.75rem, 1.4500000000000002rem + 1.4999999999999998vw, 2.8rem);
+    --fs-h3: clamp(1.25rem, 1.0357142857142856rem + 1.0714285714285714vw, 2rem);
+    --fs-button: clamp(1rem, 1.0227rem + 0.4091vw, 1.35rem);
 
     // font weight
     --fw-light: 300;

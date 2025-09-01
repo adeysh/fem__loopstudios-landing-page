@@ -3,6 +3,7 @@
 
 // Define breakpoints
 $breakpoints: (
+    "mobile": em(320),
     "tablet": em(720),
     "desktop": em(1200),
     "desktop-large": em(1920),
@@ -15,9 +16,7 @@ $breakpoints: (
     @if $from {
         @if map.has-key($breakpoints, $from) {
             $conditions: "#{$conditions} and (width >= #{map.get($breakpoints, $from)})";
-        }
-
-        @else {
+        } @else {
             @error "Invalid 'from' breakpoint: #{$from}";
         }
     }
@@ -25,9 +24,7 @@ $breakpoints: (
     @if $to {
         @if map.has-key($breakpoints, $to) {
             $conditions: "#{$conditions} and (width <= #{map.get($breakpoints, $to)})";
-        }
-
-        @else {
+        } @else {
             @error "Invalid 'to' breakpoint: #{$to}";
         }
     }

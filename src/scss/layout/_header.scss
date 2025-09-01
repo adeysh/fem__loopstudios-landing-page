@@ -1,0 +1,69 @@
+@use "../abstracts" as a;
+
+.header {
+    @include a.flexbox($align: center, $justify: space-between);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    padding-block: a.rem(60);
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out, padding-block 0.5s ease-in-out;
+
+    &--scrolled {
+        background-color: var(--color-black);
+        padding-block: a.rem(30);
+
+        .nav__content {
+            padding-block: a.rem(30);
+        }
+
+        @include a.bp($from: "desktop") {
+            .nav__content {
+                padding: a.rem(0);
+            }
+        }
+    }
+
+    &__container {
+        @include a.flexbox($align: center, $justify: space-between);
+    }
+
+    &__logo {
+        z-index: 3;
+        &-img {
+            width: clamp(10rem, 9.428571428571429rem + 2.857142857142857vw, 12rem);
+        }
+    }
+
+    &__nav {
+        @include a.flexbox($align: center);
+
+        &-links {
+            @include a.flexbox($direction: column, $gap: a.rem(20));
+            list-style-type: none;
+
+            @include a.bp($from: "desktop") {
+                @include a.flexbox($direction: row, $align: center, $gap: a.rem(40));
+            }
+        }
+
+        &-link {
+            font-family: var(--ff-secondary);
+            text-transform: uppercase;
+            font-size: var(--fs-h3);
+            font-weight: var(--fw-light);
+
+            @include a.bp($from: "desktop") {
+                font-family: var(--ff-primary);
+                text-transform: capitalize;
+                font-size: var(--fs-body);
+                font-weight: var(--fw-regular);
+            }
+        }
+    }
+
+    @include a.bp($from: "desktop") {
+        @include a.flexbox($direction: row, $align: center, $justify: space-between);
+    }
+}
